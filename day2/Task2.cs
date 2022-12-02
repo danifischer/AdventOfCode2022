@@ -24,8 +24,6 @@ internal static class Task2
         var shapeScore = GetShapeScore(shape);
         var playScore = GetPlayScore(opponent, shape);
 
-        //Console.WriteLine($"ss: {shapeScore}, ps: {playScore} - {opponent} / {me}");
-
         return shapeScore + playScore;
     }
 
