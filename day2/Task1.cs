@@ -28,16 +28,7 @@ internal static class Task1
 
     private static int GetPlayScore(char opponent, char me)
     {
-        switch ((me - opponent) % 3)
-        {
-            case 2:
-                return 3;
-            case 1:
-                return 0;
-            case 0:
-            default:
-                return 6;
-        }
+        return (((me - opponent - 1) % 3) * 3);
     }
 
     private static int GetShapeScore(char shape)

@@ -45,24 +45,15 @@ internal static class Task2
 
         int shape = opponent + 23 + deltaOutcome;
 
-        if(shape == 91) shape = 88;
-        if(shape == 87) shape = 90;
+        if (shape == 91) shape = 88;
+        if (shape == 87) shape = 90;
 
         return (char)shape;
     }
 
     private static int GetPlayScore(char opponent, char me)
     {
-        switch ((me - opponent) % 3)
-        {
-            case 2:
-                return 3;
-            case 1:
-                return 0;
-            case 0:
-            default:
-                return 6;
-        }
+        return (((me - opponent - 1) % 3) * 3);
     }
 
     private static int GetShapeScore(char shape)
