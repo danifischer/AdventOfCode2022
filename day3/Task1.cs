@@ -1,6 +1,5 @@
 internal class Task1
 {
-
     internal static void Run()
     {
         var score = 0;
