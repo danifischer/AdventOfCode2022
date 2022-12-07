@@ -10,10 +10,6 @@ internal class AocDirectory
 
     public long Size { get; set; }
 
-    public List<AocDirectory> Children {get; } = new();
-
-    public List<AocFile> Files {get; } = new();
-
     public AocDirectory? Parent {get; }
 
     public string Print()
